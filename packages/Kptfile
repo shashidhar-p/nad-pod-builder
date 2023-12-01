@@ -1,0 +1,10 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: nad-pod-builder
+info:
+  description: Generates NAD and POD from configMap
+pipeline:
+  mutators:
+    - image: shashidharpatil/build-nad:v1
+    - image: shashidharpatil/build-pod:v1
