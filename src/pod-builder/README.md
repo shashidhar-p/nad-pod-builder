@@ -1,4 +1,4 @@
-# build-nad
+# build-pod
 
 ## Overview
 
@@ -28,6 +28,6 @@ docker build . -t ${FN_CONTAINER_REGISTRY}/${FUNCTION_NAME}:${TAG}
 
 ### Function eval
 ```
-kpt fn eval ./testdata/test1/resources.yaml --image ${FN_CONTAINER_REGISTRY}/${FUNCTION_NAME}:${TAG}
+kpt fn eval ./testdata/test1 --image ${FN_CONTAINER_REGISTRY}/${FUNCTION_NAME}:${TAG}
 ```
 
